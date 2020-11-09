@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>infobox show[one/Multiple]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>html,body{height:100%;}body{padding:0;margin:0;}h1{padding:0;margin:0;font-size:50%;}</style>
+</head>
+<body>
+
+
+<!-- MAP[START] -->
+<h1>Click on the pin. (Select 1 to 3 as the second argument of the function. The result changes.)</h1>
+<div id="myMap" style="width:100vw;height:100vh;"></div>
+<!-- MAP[END] -->
+
+
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AgIIwc2UFXPqOe8uAEHlNizafhf1ZBVtUrYU5X74SDnlP3GiNPzZ4HkbwkmOx238]' async defer></script>
+<script src="../js/BmapQuery.js"></script>
+<script>
+    //init
+    function GetMap() {
+        //------------------------------------------------------------------------
+        //1. Instance
+        //------------------------------------------------------------------------
+        const map = new Bmap("#myMap");
+        //------------------------------------------------------------------------
+        //2. Display Map
+        //------------------------------------------------------------------------
+        map.startMap(35.039500, 135.728500, "load", 10);
+
+        //----------------------------------------------------
+        //3. Infobox
+        //   options = new Array();
+        //   options[index] = { lat, lon, width, height, title, pinColor, description, show };
+        //----------------------------------------------------
+        const options = [];
+        options[0]={
+            "lat":35.6355406,
+            "lon":139.7407245,
+            "title":"TOKYO",
+            "pinColor":"#ff0000",
+            "height":300,
+            "width":320,
+            "description": 'TAKANAWA Gateway station<br><img src="../img/gateway.jpg" width="300">',
+            "show":false
+        };
+        options[1]={
+            "lat":34.9948282,
+            "lon":135.7848819,
+            "title":"KYOTO",
+            "pinColor":"#ff0000",
+            "height":300,
+            "width":320,
+            "description": 'Kiyomizudera<br><img src="../img/kiyomizu.jpg" width="300">',
+            "show":false
+        };
+        options[2]={
+            "lat":34.6731483,
+            "lon":135.5008557,
+            "title":"OSAKA",
+            "pinColor":"#ff0000",
+            "height":300,
+            "width":320,
+            "description": 'Shinsaibashi<br><img src="../img/sinsaibashi.jpg" width="300">',
+            "show":false
+        };
+
+        options[3]={
+            "lat":33.590188,
+            "lon":130.420685,
+            "title":"FUKUOKA",
+            "pinColor":"#ff0000",
+            "height":300,
+            "width":320,
+            "description": 'Hakata station<br><img src="../img/hakata.jpg" width="300">',
+            "show":false
+        };
+
+        options[4]={
+            "lat":43.0631159,
+            "lon":141.353452,
+            "title":"HOKKAIDO",
+            "pinColor":"#ff0000",
+            "height":300,
+            "width":320,
+            "description": 'Sapporo<br><img src="../img/sapporo.jpg" width="300">',
+            "show":false
+        };
+
+        //----------------------------------------------------
+        //4. Switch infoboxs
+        //   infoboxLayers(options, true); //true=one, false=Multiple
+        //----------------------------------------------------
+        map.infoboxLayers(options,true);
+
+    }
+</script>
+</body>
+</html>
