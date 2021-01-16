@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+#allpage{
+    width: 1200px;
+    background-color:#fff8c0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* index.php */
+.title{
+    font-size: 45px;
+    position: relative;
+    /* z-index: 0; */
+    left: 360px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 62, 62);
+}
+
+.loginform{
+    position: relative;
+    left:450px;
+}
+
+.login{
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 290px;
+	height: 150px;
+    position: relative;
+    
+}
+
+.form{
+    color:  rgb(255, 62, 62);
+    position: relative;
+    left:50px;
+}
+
+.loginbtn{
+    position: relative;
+    left:100px;
+    top: -30px;
+}
+
+.after{
+    color:#000000;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+/* signup.php */
+
+.title2{
+    font-size: 45px;
+    position: relative;
+    /* z-index: 0; */
+    left: 450px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 62, 62);
+}
+
+.signupform{
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    left:420px;
+    font-size:20px
+}
+
+.coment{
+    font-size:15px;
+}
+
+/* home.php */
+
+.title3{
+    font-size: 45px;
+    position: relative;
+    /* z-index: 0; */
+    left: 530px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 62, 62);
+}
+
+.subtitle{
+    font-size: 25px;
+    position: relative;
+    /* z-index: 0; */
+    left: 100px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 62, 62);
+}
+
+.homeform{
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    left:420px;
+}
+
+.after2{
+    position: relative;
+    color:#000000;
+    font-family: 'Roboto Slab', serif;
+    left:450px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.timeline{
+    position: relative;
+    left: -110px;
+}
+
+.Kensaku{
+    position: relative;
+    left: 70px;
+}
+
+#table{
+    position: relative;
+    left: -500px;
+}
+
+/* logout.php */
+.login2{
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 290px;
+	height: 150px;
+    position: relative; 
+    top: 200px;
+    left: 450px;
+}
+
+/* fileup.php */
+img{height:200px;}
